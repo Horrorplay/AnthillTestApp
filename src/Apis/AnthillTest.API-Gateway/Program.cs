@@ -34,7 +34,6 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddSingleton<IElasticSearchService, ElasticSearchService>();
 
 builder.Services.AddElasticSearchConfig();
-builder.Host.UseSerilog();
 builder.Services.AddLogging();
 
 builder.Services.AddHttpContextAccessor();

@@ -30,7 +30,6 @@ builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddHttpClient<HttpClientHandlerRetry>();
 
 builder.Services.AddElasticSearchConfig();
-builder.Host.UseSerilog();
 builder.Services.AddLogging();
 
 builder.Services.AddDbContext(configuration);

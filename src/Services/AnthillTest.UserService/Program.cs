@@ -39,7 +39,6 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 builder.Services.AddElasticSearchConifg();
-builder.Host.UseSerilog();
 builder.Services.AddLogging();
 
 var app = builder.Build();
